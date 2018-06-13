@@ -1,11 +1,18 @@
 ---
 layout: post
-title: ServerCore - Install Windows Admin Center (WAC)
+title: Microsoft | Windows Admin Center (WAC)
 ---
 
 # Description
-...
+...only a draft..
 
+Tested with:
+-[ ] Microsoft Server 2019 (Core)
+-[ ] Microsoft Server 2019
+-[x] Microsoft Server 2016 (Core)
+-[ ] Microsoft Server 2016
+
+# Instructions
 1) Download [installer](http://aka.ms/WACDownload)
 2) Copy installer to server (or make available)
 3) Start [https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/deploy/install](installation):
