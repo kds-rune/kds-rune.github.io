@@ -22,109 +22,22 @@ title: index
     </div>
   </div>
 
-  <!-- START: Content ROW 1 -->
-  <div class="row">
-    <!-- START: Content COL 1 -->
-    <div class="col-sm justify-content-left">
+  <div class="row"> <!-- START: Content ROW 1 -->
+    <div class="col-sm justify-content-left"> <!-- START: Content COL 1 -->
       <p>
-        I am currently using/exploring):<br><br>
-        Automation Tools:
-        <ul>
-          <li>Ansible</li>
-          <li>Ansible Tower (awx)</li>
-          <li>Jenkins</li>
-          <li>Jekyll</li>
-        </ul>
-        Containers:
-        <ul>
-          <li>Docker</li>
-        </ul>
-        Container Orchestration:
-        <ul>
-          <li>Docker Swarm Mode</li>
-          <li>Kubernetes</li>
-            <ul>
-              <li>bootkube</li>
-              <li>kops</li>
-              <li>kubespray</li>
-              <li>helm</li>
-            </ul>
-        </ul>
-        Logging, Monitoring and Visualizing:
-        <ul>
-          <li>Elastic Stack</li>
-            <ul>
-              <li>Elasticsearch</li>
-              <li>Logstash</li>
-              <li>Kibana</li>
-              <li>Beats</li>
-            </ul>
-          <li>Prometheus</li>
-          <li>Grafana</li>
-        </ul>
-        Networking:
-        <ul>
-          <li>Traefik</li>
-          <li>HAproxy</li>
-          <li>Nginx</li>
-        </ul>
-        Development
-        <ul>
-          <li>Bootstrap</li>
-        </ul>
       </p>
-    <!-- END: Content COL 1 -->
-    </div>
-
-    <!-- START: Content COL 2 -->
-    <div class="col-sm justify-content-left">
+    </div> <!-- END: Content COL 1 -->
+    <div class="col-sm justify-content-center"> <!-- START: Content COL 2 -->
       <p>
-        Tools and services:<br><br>
-        <ul>
-          <li>Atom Editor</li>
-          <li>vi</li>
-          <li>GitHub</li>
-          <li>Microsoft Teams</li>
-          <li>Vagrant</li>
-          <li>KVM</li>
-          <li>Virtualbox</li>
-          <li>HyperV</li>
-          <li>VMware vSphere</li>
-          <li>Google Cloud</li>
-          <li>Python</li>
-          <li>Golang</li>
-          <li>Powershell</li>
-          <li>puTTY</li>
-        </ul>
+      {% for post in site.posts %}
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <small><strong>{{ post.date | date: "%B %e, %Y" }}</strong></small>
+      {% endfor %}
       </p>
-    <!-- END: Content COL 2 -->
-    </div>
-
-    <!-- START: Content COL 3 -->
-    <div class="col-sm justify-content-left">
+    </div> <!-- END: Content COL 2 -->
+    <div class="col-sm justify-content-left"> <!-- START: Content COL 3 -->
       <p>
-      Also planning to learn (more) about:<br><br>
-        <ul>
-          <li>SaltStack</li>
-          <li>Puppet/Chef</li>
-          <li>LetsEncrypt</li>
-          <li>MAAS</li>
-          <li>Jenkins</li>
-          <li>rkt</li>
-          <li>CoreOS,RancherOS,AtomicOS,PhotonOS</li>
-          <li>Terraform</li>
-          <li>Foreman</li>
-          <li>OpenStack</li>
-          <li>GlusterFS</li>
-          <li>SQL</li>
-          <li>Chokolatey</li>
-          <li>Tensorflow</li>
-          <li>..lots and lots more</li>
-        </ul>
       </p>
-    </div>
-    <!-- END: Content COL 3 -->
-  <!-- END: Content ROW 1 -->
-  </div>
-<!-- END: Content Content CONTAINER -->
-</div>
+    </div> <!-- END: Content COL 3 -->
+  </div> <!-- END: Content ROW 1 -->
+</div> <!-- END: Content Content CONTAINER -->
