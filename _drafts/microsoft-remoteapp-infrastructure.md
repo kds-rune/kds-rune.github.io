@@ -12,7 +12,7 @@ Tested with:
 ## Planning your insfrastructure
 We will be using the following servers:
 
-| name         | server   | role(s)           |
+| Name         | Server   | Role(s)           |
 | :----------- | :------- | :---------------- |
 | rds-broker1  | core     | licensing, broker |
 | rds-gateway1 | standard | gateway           |

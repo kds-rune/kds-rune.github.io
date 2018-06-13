@@ -1,3 +1,4 @@
+theme: jekyll-theme-cayman
 name: Rune Rønneseth
 markdown: kramdown
 show_drafts: false
