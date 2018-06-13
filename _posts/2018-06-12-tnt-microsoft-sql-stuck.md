@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tips andTricks | Microsoft SQL | Database stuck
+title: Tips andTricks | Microsoft SQL database stuck
 ---
 #
 ..only a draft..

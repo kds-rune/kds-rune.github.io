@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Microsoft | ServerCore | Install DHCP role
+title: Microsoft | Install DHCP role
 ---
 
 # Description

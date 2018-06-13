@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Microsoft | ServerCore | RemoteApp Infrastructure
+title: Microsoft | RemoteApp Infrastructure
 ---
 # Description
 ...only a draft..
