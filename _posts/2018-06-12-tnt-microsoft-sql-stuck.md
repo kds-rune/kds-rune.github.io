@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tips andTricks | Microsoft SQL database stuck
+title: Tips and Tricks | Microsoft SQL database stuck
 ---
 #
 ..only a draft..
@@ -9,10 +9,9 @@ Tested with:
 -[x] Microsoft SQL Studio 2014
 -[x] Microsoft SQL Server 2014 (Standard)
 
-# Database stuck
-Open SQL Management Studio and execute queries below:
-
-First, find any and all processes locking your database:
+# Database stuck (when taking offline)
+Open SQL Management Studio and execute the following
+query to find any processes (b)locking your database:
 ```
 EXEC sp_who2
 ```

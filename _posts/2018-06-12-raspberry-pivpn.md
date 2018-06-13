@@ -6,8 +6,8 @@ title:  RaspberryPi | VPN Server (pivpn)
 ...only a draft..
 
 Tested with:
--[x] Hardware: [https://www.raspberrypi.org/products/raspberry-pi-zero-w/](RaspberryPi Zero W)
--[x] Operating System: [hypriot](https://blog.hypriot.com/)
+- [x] Hardware: [https://www.raspberrypi.org/products/raspberry-pi-zero-w/](RaspberryPi Zero W)
+- [x] Operating System: [hypriot](https://blog.hypriot.com/)
 
 ## RaspberryPi
 - OpenVPN with PiVPN | [Github](https://github.com/pivpn/pivpn) | [Home](http://www.pivpn.io/)

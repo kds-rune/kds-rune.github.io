@@ -6,5 +6,5 @@ title: Microsoft | RemoteApp Infrastructure
 ...only a draft..
 
 Tested with:
--[x] Microsoft Server 2016 (Core)
--[x] Microsoft Server 2016
+- [x] Microsoft Server 2016 (Core)
+- [x] Microsoft Server 2016

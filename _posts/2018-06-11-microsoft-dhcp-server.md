@@ -7,10 +7,7 @@ title: Microsoft | Install DHCP role
 ...only a draft..
 
 Tested with:
--[ ] Microsoft Server 2019 (Core)
--[ ] Microsoft Server 2019
--[x] Microsoft Server 2016 (Core)
--[ ] Microsoft Server 2016
+- [x] Microsoft Server 2016 (Core)
 
 # Instructions
 
