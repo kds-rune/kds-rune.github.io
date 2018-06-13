@@ -1,10 +1,17 @@
 ---
 layout: post
 title: Title
-category: ['example']
+categories: ['example']
 published: false
 ---
 # Details
-Tested with:
-- [x] Microsoft Server 2016 (Core)
-- [x] Microsoft Server 2016
+Platform(s):
+- [] Microsoft Server 2019 (Core)
+- [] Microsoft Server 2019
+- [] Microsoft Server 2016 (Core)
+- [] Microsoft Server 2016
+- [] CentOS 7
+- [] Ubuntu 18.04
+- [] CoreOS
+- [] Docker
+- [] Kubernetes

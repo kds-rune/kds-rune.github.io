@@ -1,24 +1,27 @@
 ---
-layout: default
-title: index
+layout: page
+title: home
 ---
 
-<!-- START: Content Content CONTAINER -->
+<!-- START: Content CONTAINER -->
 <div class="container-fluid">
-  <div class="row">
+
+  <div class="row"> <!-- START: ROW 1 -->
     <div class="col justify-content-center">
       <h1>Welcome</h1>
     </div>
-  </div>
+  </div> <!-- END: ROW 1 -->
 
-  <div class="row"> <!-- START: Header ROW -->
-    <div class="col justify-content-center">  <!-- START: Header COL -->
+  <div class="row"> <!-- START: ROW 2 -->
+    <div class="col justify-content-left">  <!-- START: Header COL -->
       <p>
         This page is mainly for testing bootstrap and jekyll (I know it, looks awfull!)
         Will add links to projects and tutorials here at some point as well..
       </p>
     </div>  <!-- END: Header COL -->
-  </div>  <!-- END: Header ROW -->
+  </div>  <!-- END: ROW 2-->
+
+  <div class="row"> <!-- START: ROW 3 -->
     <div class="col-sm justify-content-left"> <!-- START: Content COL 1 -->
       <p>
       {% for post in site.posts limit:10 %}
@@ -28,9 +31,6 @@ title: index
       {% endfor %}
       </p>
     </div> <!-- END: Content COL 1 -->
-    <div class="col-sm justify-content-left"> <!-- START: Content COL 2 -->
-      <p>
-      </p>
-    </div> <!-- END: Content COL 2 -->
-  </div> <!-- END: Content ROW 1 -->
-</div> <!-- END: Content Content CONTAINER -->
+  </div> <!-- END: ROW 3 -->
+
+</div> <!-- END: Content CONTAINER -->

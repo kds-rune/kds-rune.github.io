@@ -1,14 +1,27 @@
 ---
-layout: default
+layout: base
 ---
-<article class="post">
-  <h1>{{ page.title }}</h1>
-  <hr>
-  <div class="entry">
-    {{ content }}
+{% include navbar_bootstrap.html %}
+
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col justify-content-left">
+      <h2>{{ page.title }}</h1>
+        <hr>
+    </div>
   </div>
-  <div class="date">
-    <hr>
-    <small class="text-muted">written:  {{ page.date | date: "%B %e, %Y" }}</small>
+
+  <div class="row">
+    <div class="col justify-content-left">
+      {{ content }}
+    </div>
   </div>
-</article>
+
+  <div class="row">
+    <div class="col justify-content-left">
+      <hr>
+      <small class="text-muted">written:  {{ page.date | date: "%B %e, %Y" }}</small>
+    </div>
+  </div>
+</div>
