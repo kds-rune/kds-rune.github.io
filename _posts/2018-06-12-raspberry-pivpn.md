@@ -12,10 +12,20 @@ Tested with:
 ## RaspberryPi
 - OpenVPN with PiVPN | [Github](https://github.com/pivpn/pivpn) | [Home](http://www.pivpn.io/)
 
-## CentOS | Ubuntu > to be moved!
-- OpenVPN with installation script | [Github](https://github.com/Nyr/openvpn-install)
+# Firewall/iptables
+Add persistent firewall-rules:
+- OpenVPN (1194/udp)
+- Masquerading
 
-# Other considerations
-- iptables
-- firewalld
-- selinux
+```
+# systemctl status firewalld
+# firewall-cmd --permanent --list-all --zone=public
+# firewall-cmd --permanent --add-service openvpn --zone=public
+# firewall-cmd --permanent --add-masquerading --zone=public
+# firewall-cmd --reload
+# firewall-cmd --permanent --list-all --zone=public
+# journalctl -f -u firewalld
+```
+
+# SELinux
+Set to "permissive" (logging only), unless you are an advanced user
