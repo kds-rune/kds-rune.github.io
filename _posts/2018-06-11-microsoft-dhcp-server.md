@@ -1,37 +1,44 @@
 ---
 layout: post
-title: Microsoft | Install DHCP role
+title: Microsoft | Install DHCP role (powershell)
+categories: ['microsoft','software']
+published: true
 ---
-
-# Description
-...only a draft..
-
+# Details
 Tested with:
 - [x] Microsoft Server 2016 (Core)
 
-# Instructions
+This guide assumes you already have a server with operating system installed,
+and a static ip address configured. You should also have access to the server,
+or be able to manage it remotely (prefered)
 
-1) Install the DHCP role
+# Installation
+Install the DHCP role:
 ```
 PS> Install-WindowsFeature DHCP -IncludeManagementTools
 ```
-2) Add scope tom manage
+
+Add scope to manage:
 ```
 PS> Add-DhcpServerv4Scope -Name "NameOfScope" -StartRange x.x.x.x -EndRange x.x.x.x -SubnetMask x.x.x.x -Description "ScopeDescription"
 ```
-3) Set scope options
+
+Set scope options:
 ```
 PS> Set-DhcpServerv4OptionValue -ScopeID "NameOfScope" -DNSServer x.x.x.x -DNSDomain domain.name -Router x.x.x.x
 ```
-4) Set server options (omit 'scope-id'):
+
+Set server options (omit 'scope-id'):
 ```
 PS> Set-DhcpServerv4OptionValue -DNSServer x.x.x.x -DNSDomain domain.name -Router x.x.x.x
 ```
-5) Authorize server in AD
+
+Authorize server in AD:
 ```
 Add-DhcpServerInDC -DNSName domain.name
 ```
-6) Add failover
+
+Configure failover:
 ```
 Add-DhcpServerv4Failover -Name "FailoverName" -PartnerServer partnerserver.domain.name -ScopeId x..x.x -LoadBalancePercent 50 -SharedSecret "SomeSecretCode" -MaxClientLeadTime 2:00:00 -AutoStateTransition $true -StateSwitchInterval 2:00:00
 ```

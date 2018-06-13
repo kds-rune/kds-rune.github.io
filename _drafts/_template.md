@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Microsoft | RemoteApp Infrastructure
+title: Title
+category: ['example']
+published: false
 ---
-# Description
-...only a draft..
-
+# Details
 Tested with:
 - [x] Microsoft Server 2016 (Core)
 - [x] Microsoft Server 2016

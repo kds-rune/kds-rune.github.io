@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Wiki | Public Key Infrastructure (pki)
+categories: ['wiki']
+published: false
 ---
 # Desctiption
 ...only a draft...

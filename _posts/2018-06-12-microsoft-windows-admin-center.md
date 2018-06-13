@@ -1,13 +1,17 @@
 ---
 layout: post
 title: Microsoft | Windows Admin Center (WAC)
+categories: ['microsoft','software']
+published: true
 ---
-
 # Description
-...only a draft..
-
 Tested with:
 - [x] Microsoft Server 2016 (Core)
+
+This guide assumes you already have a server with operating system installed.
+You should also have access to the server, or be able to manage it remotely
+(prefered). You will need internet access to download the installer (or you
+will need to download the full installer from somewhere else)
 
 # Instructions
 1) Download [installer](http://aka.ms/WACDownload)
