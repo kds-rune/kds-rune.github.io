@@ -6,8 +6,8 @@ published: true
 ---
 # Details
 Tested with:
--[x] Microsoft SQL Studio 2014
--[x] Microsoft SQL Server 2014 (Standard)
+- [x] Microsoft SQL Studio 2014
+- [x] Microsoft SQL Server 2014 (Standard)
 
 # Database stuck when taking it offline
 Open SQL Management Studio and execute the following
